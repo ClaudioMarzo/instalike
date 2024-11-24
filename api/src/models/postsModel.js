@@ -1,8 +1,6 @@
 import { ObjectId } from "mongodb";
 import conectarAoBanco from "../config/dbConfig.js"
-import dotenv from 'dotenv';
-
-dotenv.config();
+import 'dotenv/config';
 
 // Conecta ao banco de dados utilizando a string de conexão fornecida como variável de ambiente
 const conexao = await conectarAoBanco(process.env.CONNECTION_STRING_MONGODB);
